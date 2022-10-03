@@ -1,0 +1,186 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
+}
+
+
+.about{
+	width: 100%;
+	padding: 100px 0px;
+    height: 100%;
+	background: #e4ebeaea;
+
+}
+
+
+.about img{
+	height: auto;
+	width: 430px;
+}
+.about-text{
+	width: 550px;
+}
+.main{
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+    height: 100%;
+    box-sizing: border-box;
+    min-height: 100%;
+    padding-bottom: 90px;
+}
+.about-text h2{
+	color:#101010;
+	font-size: 75px;
+	margin-bottom: 20px;
+}
+.about-text h5{
+	color: #101010;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin-bottom: 25px;
+}
+.about-text h4{
+	color: #101010;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 45px;
+}
+
+.hobby{
+	background: #67d8ec;
+	width: 100%;
+	padding: 100px 0px;
+}
+.title h2{
+	color: #101010;
+	font-size: 75px;
+	width: 1130px;
+	margin: 30px auto;
+	text-align: center;
+}
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.card1, .card2, .card3{
+	height: 550px;
+	width: 335px;
+	padding: 20px 35px;
+	background: #363636;
+	border-radius: 20px;
+	margin: 15px;
+	position: relative;
+	text-align: center;
+}
+i{
+	font-size: 50px;
+	display: block;
+	text-align: center;
+	margin: 25px 0px;
+	color: #11a3e7d8;
+
+}
+h5{
+	color: rgb(255, 255, 255);
+	font-size: 23px;
+	margin-bottom: 15px;
+}
+.card1 p, .card2 p, .card3 p{
+	color: #dbe6df;
+	font-size: 16px;
+	line-height: 27px;
+	margin-bottom: 25px;
+}
+.arrow-up .fa-arrow-up,
+ .about-text .button1,
+  .card1 .read-more-button1, .card2 .read-more-button2,
+   .card3 .read-more-button3{
+	background-color:#11a3e7d8;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 9px 22px;
+	border-radius: 30px;
+	transition: .4s;
+}
+.about-text .button1{
+	background-color:#11a3e7d8;
+	color: black;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 9px 22px;
+	border-radius: 30px;
+	transition: .4s;
+}
+.arrow-up .fa-arrow-up:hover, .about-text .button1:hover , .card1 .read-more-button1:hover, .card2 .read-more-button2:hover, .card3 .read-more-button3:hover{
+	background-color: transparent;
+	border: 2px solid #11a3e7d8;
+	cursor: pointer;
+}
+.arrow-up{
+	width: 100%;
+	height: 110px;
+	background: #191919;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+.card1{
+
+    max-height: 550px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card2{
+    max-height: 550px;
+    overflow: hidden;
+    position: relative;
+}
+.card3{
+    max-height: 550px;
+    overflow: hidden;
+    position: relative;
+}
+.read-more-checker1:checked ~ .big1::after{
+	content: "Парусный спорт учит быстро принимать решение, развивает выдержку и силу воли. Поскольку, пройти долгую изнурительную гонку длинной 500 морских миль весьма и весьма непросто.";
+}
+
+.read-more-checker2:checked ~ .big2::after{
+	content: "сетевой мессенджер с играми при помощи qt  и написал тетрис, в котором можно соревноваться с друзьями. Также работая в команде, разработали бота в телеграмме, рассылающего расписание уроков.";
+}
+
+.read-more-checker3:checked ~ .big3::after{
+content: "С тех пор я увлекаюсь игрой гитарой, оттачиваю своё мастерство и разучиваю новые композиции. Помимо творческой составляющей игра на гитаре улучшает память и концентрацию";
+}
+
+
+ .read-more-button1:after, .read-more-button2:after, .read-more-button3:after{
+    content: "Читать больше";
+}
+
+.read-more-checker1:checked ~ .read-more-button1::after, .read-more-checker2:checked ~ .read-more-button2::after, .read-more-checker3:checked ~ .read-more-button3::after{
+    content: "Свернуть";
+}
+
+.read-more-checker1, .read-more-checker2, .read-more-checker3{
+    opacity: 0;
+}
